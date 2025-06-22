@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Amazon Ember', Arial, sans-serif; /* More Amazon-like */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f2f2;
+  height: 100vh;
+}
+
+.card {
+  background-color: #fff;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.product-img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.product-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0f1111;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  font-size: 16px;
+  color: #ffa41c; /* Amazon Gold Star */
+}
+
+.rating .star {
+  margin-right: 2px;
+}
+
+.rating .count {
+  font-size: 13px;
+  color: #565959;
+  margin-left: 6px;
+}
+
+.bought-text {
+  font-size: 13px;
+  color: #565959;
+  margin-bottom: 10px;
+}
+
+.price-block {
+  margin-bottom: 12px;
+}
+
+.price-main {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1f0903;
+}
+
+.price-main sup {
+  font-size: 12px;
+  vertical-align: top;
+}
+
+.delivery-fee,
+.shipping {
+  font-size: 13px;
+  color: #565959;
+  margin-bottom: 6px;
+}
+
+.add-cart-btn {
+  background-color: #ffd814;
+  border: 1px solid #fcd200;
+  padding: 12px 0;
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #0f1111;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 10px;
+}
+
+.add-cart-btn:hover {
+  background-color: #f7ca00;
+}
